@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Has sido hackeado!</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #000;
+            color: #0f0;
+            text-align: center;
+            padding: 100px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        h1 {
+            color: #f00;
+            font-size: 4em;
+            margin-bottom: 30px;
+        }
+        p {
+            color: #0f0;
+            font-size: 1.5em;
+            margin-bottom: 30px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 30px;
+            position: relative;
+            animation: glitch-animation 2s infinite linear alternate-reverse;
+        }
+        .glitch {
+            position: relative;
+            display: inline-block;
+            animation: glitch-animation 2s infinite linear alternate-reverse;
+        }
+        @keyframes glitch-animation {
+            0% {
+                top: 0px;
+                left: 0px;
+            }
+            25% {
+                top: -5px;
+                left: 5px;
+            }
+            50% {
+                top: 5px;
+                left: -5px;
+            }
+            75% {
+                top: -5px;
+                left: 5px;
+            }
+            100% {
+                top: 0px;
+                left: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="glitch">¡Has sido hackeado!</h1>
+        <img src="/img/360_F_228230865_YowfNN5a7r6WDQu97swpRPeTdJd1VRkt-removebg-preview.png" alt="Imagen de hacker">
+        <p class="glitch">Lo sentimos, parece que tus datos han sido comprometidos.</p>
+        <p class="glitch">Juas Juas Juas, Te acabo de hackear no hay salida.</p>
+    </div>
+</body>
+</html>
